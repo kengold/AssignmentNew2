@@ -12,7 +12,7 @@ $this->title = 'Contact';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-contact">
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><font color="blue"><?= Html::encode($this->title) ?></font></h1>
 
     <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
@@ -34,7 +34,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php else: ?>
 
         <p>
-            If you have business inquiries or other questions, please fill out the following form to contact us.
+             21  Giltress Street Rollington Town Kingston Jamamicam W.I<br>
+             Email: kennardgoldson@gmail.com.<br>+1 876-367-1090<br><br>If you have business inquiries or other questions, please fill out the following form to contact us.
             Thank you.
         </p>
 

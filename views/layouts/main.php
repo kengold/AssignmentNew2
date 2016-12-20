@@ -15,18 +15,21 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
+   
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+    <body>
+    
 <?php $this->beginBody() ?>
 
 <div class="wrap">
     <?php
     NavBar::begin([
+            
         'brandLabel' => 'Kengold Enterprise',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
@@ -39,6 +42,7 @@ AppAsset::register($this);
             ['label' => 'Home', 'url' => ['/site/index']],
              ['label' => 'Registration', 'url' => ['/profile/index']],
             ['label' => 'About', 'url' => ['/site/about']],
+           ['label' => 'Services', 'url' => ['/site/services']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
@@ -67,13 +71,13 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; Kengold Enterprise Limited <?= date('Y') ?></p>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+<!--        <p class="pull-right"><?= Yii::powered() ?></p>-->
     </div>
 </footer>
 
-<?php $this->endBody() ?>
+<!--<?php $this->endBody() ?>-->
 </body>
 </html>
 <?php $this->endPage() ?>

@@ -11,7 +11,7 @@ $this->title = $name;
 ?>
 <div class="site-error">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><font color="blue"><?= Html::encode($this->title) ?></font></h1>
 
     <div class="alert alert-danger">
         <?= nl2br(Html::encode($message)) ?>
